@@ -6,5 +6,24 @@
   "repository": "https://github.com/MarcCoet/ssb.git",
   "author": "Marc Coët",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "scripts": {
+    "start": "ssg dev",
+    "dev": "ssg dev",
+    "serve": "serve __sapper__/export",
+    "build": "ssg export",
+    "clean": "rm -rf __sapper__",
+    "postinstall": "patch-package",
+    "nobuild": "ssg export --build false",
+    "prettify": "prettier --write src/**/*",
+    "screenshot": "node screenshot-plugin/cli.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ssg": "^0.0.59"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1",
+    "prettier-plugin-svelte": "^0.7.0"
+  }
 }
