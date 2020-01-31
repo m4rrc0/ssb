@@ -1,0 +1,10 @@
+{
+  "name": "ssb",
+  "version": "1.0.0",
+  "description": "A pragmatic static site builder using ssg",
+  "main": "index.js",
+  "repository": "https://github.com/MarcCoet/ssb.git",
+  "author": "Marc Coët",
+  "license": "MIT",
+  "private": false
+}
